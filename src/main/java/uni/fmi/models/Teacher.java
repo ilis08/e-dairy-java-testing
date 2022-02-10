@@ -9,34 +9,28 @@ public class Teacher extends User {
     /**
      * Default constructor
      */
-    public Teacher() {
-    }
+	public Teacher(String fname, String lname, String pass, String mail){
+   	 super(fname, lname, pass, mail);
+   }
 
-    /**
-     * 
-     */
     private Class course;
-
-    /**
-     * 
-     */
     private Set<Subject> subjects;
 
     /**
      * @return
      */
-    public Subject getSubjects() {
+    public Set<Subject> getSubjects() {
         // TODO implement here
-        return null;
+        return subjects;
     }
 
     /**
      * @param subjects 
      * @return
      */
-    public void setSubjects(Subject subjects) {
+    public void setSubjects(Set<Subject> subjects) {
         // TODO implement here
-        
+        this.subjects = subjects;
     }
 
     /**
@@ -44,7 +38,7 @@ public class Teacher extends User {
      */
     public Class getCourse() {
         // TODO implement here
-        return null;
+        return course;
     }
 
     /**
@@ -53,7 +47,7 @@ public class Teacher extends User {
      */
     public void setClass(Class course) {
         // TODO implement here
-  
+    	this.course = course;
     }
 
 }

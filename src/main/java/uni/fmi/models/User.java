@@ -4,12 +4,16 @@ import java.util.*;
 /**
  * 
  */
-public class User {
+public abstract class User {
 
     /**
      * Default constructor
      */
-    public User() {
+    public User(String fname, String lname, String pass, String mail) {
+    	firstName = fname;
+    	lastName = lname;
+    	password = pass;
+    	email = mail;
     }
 
 
@@ -23,16 +27,16 @@ public class User {
      */
     public String getEmail() {
         // TODO implement here
-        return "";
+        return email;
     }
 
     /**
      * @param pass 
      * @return
      */
-    public void setEmail(String pass) {
+    public void setEmail(String email) {
         // TODO implement here
-
+    	this.email = email;
     }
 
     /**
@@ -40,7 +44,7 @@ public class User {
      */
     public String getFirstName() {
         // TODO implement here
-        return "";
+        return firstName;
     }
 
     /**
@@ -49,7 +53,7 @@ public class User {
      */
     public void setFirstName(String fname) {
         // TODO implement here
-
+    	this.firstName = fname;
     }
 
     /**
@@ -57,7 +61,7 @@ public class User {
      */
     public String getLastName() {
         // TODO implement here
-        return "";
+        return lastName;
     }
 
     /**
@@ -66,7 +70,7 @@ public class User {
      */
     public void setLastName(String lname) {
         // TODO implement here
-
+    	this.lastName = lname;
     }
 
     /**
@@ -74,7 +78,7 @@ public class User {
      */
     public String getPassword() {
         // TODO implement here
-        return "";
+        return password;
     }
 
     /**
@@ -83,7 +87,7 @@ public class User {
      */
     public void setPassword(String pass) {
         // TODO implement here
-    
+    	this.password = pass;
     }
 
 }

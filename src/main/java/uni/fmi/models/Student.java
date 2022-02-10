@@ -9,13 +9,16 @@ public class Student extends User {
     /**
      * Default constructor
      */
-    public Student() {
+    public Student(final int id,final String fname,final String lname,final String pass,final String mail){
+    	 super(fname, lname, pass, mail);
+    	 this.id = id;
     }
 
-    private int id;
+
+	private int id;
     private Set<Parent> parents;
     private Set<Grade> grades;
-    private Class clas;
+    private Class course;
 
 
     /**
@@ -23,7 +26,7 @@ public class Student extends User {
      */
     public int getId() {
         // TODO implement here
-        return 0;
+        return id;
     }
 
     /**
@@ -32,7 +35,7 @@ public class Student extends User {
      */
     public void setId(int id) {
         // TODO implement here
-        
+        this.id = id;
     }
 
     /**
@@ -40,7 +43,7 @@ public class Student extends User {
      */
     public Set<Grade> getGrades() {
         // TODO implement here
-        return null;
+        return grades;
     }
 
     /**
@@ -49,7 +52,7 @@ public class Student extends User {
      */
     public void setGrades(Set<Grade> grade) {
         // TODO implement here
-        
+        grades = grade;
     }
 
     /**
@@ -57,7 +60,7 @@ public class Student extends User {
      */
     public Set<Parent> getParents() {
         // TODO implement here
-        return null;
+        return parents;
     }
 
     /**
@@ -66,12 +69,12 @@ public class Student extends User {
      */
     public void setParents(Set<Parent> parents) {
         // TODO implement here
-        
+        this.parents = parents;
     }
     
     public Class getCourse() {
         // TODO implement here
-        return null;
+        return course;
     }
 
     /**
@@ -80,7 +83,31 @@ public class Student extends User {
      */
     public void setClass(Class course) {
         // TODO implement here
-        
+        this.course = course;
     }
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+    
+    
 
 }

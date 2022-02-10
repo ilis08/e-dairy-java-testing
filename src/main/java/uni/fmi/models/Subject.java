@@ -22,7 +22,7 @@ public class Subject {
      */
     public String getName() {
         // TODO implement here
-        return "";
+        return name;
     }
 
     /**
@@ -31,7 +31,7 @@ public class Subject {
      */
     public void setName(String name) {
         // TODO implement here
-       
+       this.name = name;
     }
 
     /**
@@ -39,7 +39,7 @@ public class Subject {
      */
     public Set<Teacher> getTeachers() {
         // TODO implement here
-        return null;
+        return teachers;
     }
 
     /**
@@ -48,7 +48,7 @@ public class Subject {
      */
     public void setTeachers(Set<Teacher> teachers) {
         // TODO implement here
-        
+        this.teachers = teachers;
     }
 
     /**
@@ -56,7 +56,7 @@ public class Subject {
      */
     public Set<Exam> getExams() {
         // TODO implement here
-        return null;
+        return exams;
     }
 
     /**
@@ -65,7 +65,7 @@ public class Subject {
      */
     public void setExams(Set<Exam> exams) {
         // TODO implement here
-        
+        this.exams = exams;
     }
 
     
@@ -74,7 +74,7 @@ public class Subject {
      */
     public Set<Class> getClasses() {
         // TODO implement here
-        return null;
+        return classes;
     }
 
     /**
@@ -83,6 +83,6 @@ public class Subject {
      */
     public void setClasses(Set<Class> classes) {
         // TODO implement here
-        
+        this.classes = classes;
     }
 }

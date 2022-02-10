@@ -12,19 +12,8 @@ public class Grade {
     public Grade() {
     }
 
-    /**
-     * 
-     */
     private int gradeValue;
-
-    /**
-     * 
-     */
     private Student student;
-
-    /**
-     * 
-     */
     private Exam exam;
 
     /**
@@ -32,7 +21,7 @@ public class Grade {
      */
     public int getGradeValue() {
         // TODO implement here
-        return 0;
+        return gradeValue;
     }
 
     /**
@@ -41,7 +30,7 @@ public class Grade {
      */
     public void setGradeValue(int value) {
         // TODO implement here
-        
+        gradeValue = value;
     }
 
     /**
@@ -49,7 +38,7 @@ public class Grade {
      */
     public Student getStudent() {
         // TODO implement here
-        return null;
+        return student;
     }
 
     /**
@@ -58,7 +47,7 @@ public class Grade {
      */
     public void setStudent(Student student) {
         // TODO implement here
-        
+        this.student = student;
     }
     
     /**
@@ -66,7 +55,7 @@ public class Grade {
      */
     public Exam getExam() {
         // TODO implement here
-        return null;
+        return exam;
     }
 
     /**
@@ -75,7 +64,7 @@ public class Grade {
      */
     public void setExam(Exam exam) {
         // TODO implement here
-        
+        this.exam = exam;
     }
 
 }

@@ -24,7 +24,7 @@ public class Exam {
      */
     public String getName() {
         // TODO implement here
-        return "";
+        return name;
     }
 
     /**
@@ -33,24 +33,39 @@ public class Exam {
      */
     public void setName(String name) {
         // TODO implement here
-        
+        this.name = name;
     }
+    
+    /**
+	 * @return
+	 */
+	public String getExamDate() {
+		return examDate;
+	}
+
+	/**
+	 * @param date
+	 * @return
+	 */
+	public void setExamDate(String date) {
+		this.examDate = date;
+	}
 
     /**
      * @return
      */
-    public Grade getGrades() {
+    public Set<Grade> getGrades() {
         // TODO implement here
-        return null;
+        return grades;
     }
 
     /**
      * @param grades 
      * @return
      */
-    public void setGrades(Grade grades) {
+    public void setGrades(Set<Grade> grades) {
         // TODO implement here
-        
+        this.grades = grades;
     }
 
     /**
@@ -58,7 +73,7 @@ public class Exam {
      */
     public Subject getSubject() {
         // TODO implement here
-        return null;
+        return subject;
     }
 
     /**
@@ -67,7 +82,7 @@ public class Exam {
      */
     public void setSubject(Subject subj) {
         // TODO implement here
-        
+        this.subject = subj;
     }
 
 }
