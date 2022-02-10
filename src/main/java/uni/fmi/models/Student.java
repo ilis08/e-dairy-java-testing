@@ -78,7 +78,7 @@ public class Student extends User {
      * @param parents 
      * @return
      */
-    public void setClass(Class clas) {
+    public void setClass(Class course) {
         // TODO implement here
         
     }

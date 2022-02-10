@@ -20,7 +20,7 @@ public class Parent extends User {
     /**
      * @return
      */
-    public Student getStudents() {
+    public Set<Student> getStudents() {
         // TODO implement here
         return null;
     }
@@ -28,8 +28,9 @@ public class Parent extends User {
     /**
      * 
      */
-    public void getStudentsGrade() {
-        // TODO implement here
+    public Set<Grade> getStudentsGrade(Student student) {
+        // TODO implement here'
+    	return null;
     }
 
 }

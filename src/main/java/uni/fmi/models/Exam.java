@@ -12,24 +12,11 @@ public class Exam {
     public Exam() {
     }
 
-    /**
-     * 
-     */
     private String name;
-
-    /**
-     * 
-     */
     private String examDate;
 
-    /**
-     * 
-     */
-    private Set<Grade> grades;
 
-    /**
-     * 
-     */
+    private Set<Grade> grades;
     private Subject subject;
 
     /**

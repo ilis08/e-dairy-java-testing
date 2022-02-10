@@ -12,19 +12,10 @@ public class Class {
     public Class() {
     }
 
-    /**
-     * 
-     */
     private String name;
-
-    /**
-     * 
-     */
     private Set<Subject> subjects;
+    private Set<Student> students;
 
-    /**
-     * 
-     */
     private Teacher teacher;
 
     /**
@@ -47,7 +38,7 @@ public class Class {
     /**
      * @return
      */
-    public Subject getSubjects() {
+    public Set<Subject> getSubjects() {
         // TODO implement here
         return null;
     }
@@ -56,7 +47,7 @@ public class Class {
      * @param subject 
      * @return
      */
-    public void setSubjects(Subject subject) {
+    public void setSubjects(Set<Subject> subjects) {
         // TODO implement here
         
     }
@@ -74,6 +65,23 @@ public class Class {
      * @return
      */
     public void setTeacher(Teacher teacher) {
+        // TODO implement here
+        
+    }
+    
+    /**
+     * @return
+     */
+    public Set<Student> getStudents() {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param teacher 
+     * @return
+     */
+    public void setStudents(Set<Student> students) {
         // TODO implement here
         
     }
