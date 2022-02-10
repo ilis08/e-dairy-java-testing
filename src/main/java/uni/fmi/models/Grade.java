@@ -9,7 +9,8 @@ public class Grade {
     /**
      * Default constructor
      */
-    public Grade() {
+    public Grade(Student student) {
+    	this.student = student;
     }
 
     private int gradeValue;

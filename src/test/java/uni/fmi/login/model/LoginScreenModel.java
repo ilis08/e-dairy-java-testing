@@ -19,6 +19,7 @@ public class LoginScreenModel {
 	public void clickLoginButton() {
 		message = LoginService.login(username, password);
 	}
+	
 
 	public String getMessage() {
 		// TODO Auto-generated method stub
