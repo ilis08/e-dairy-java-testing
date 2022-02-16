@@ -9,7 +9,7 @@ public class Student extends User {
     /**
      * Default constructor
      */
-    public Student(final int id,final String fname,final String lname,final String pass,final String mail){
+    public Student(int id,final String fname,final String lname,final String pass,final String mail){
     	 super(fname, lname, pass, mail);
     	 this.id = id;
     }

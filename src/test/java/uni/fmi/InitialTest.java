@@ -8,8 +8,6 @@ import java.util.Set;
 import org.junit.Test;
 
 import uni.fmi.models.Student;
-import uni.fmi.models.Subject;
-import uni.fmi.models.User;
 
 
 public class InitialTest {

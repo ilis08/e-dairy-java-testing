@@ -16,14 +16,25 @@ public class Parent extends User {
     /**
      * 
      */
-    private Set<Student> student;
+    private Set<Student> students;
 
     /**
      * @return
      */
     public Set<Student> getStudents() {
         // TODO implement here
-        return student;
+        return students;
+    }
+
+    public void setStudents(Set<Student> students) {
+        this.students = students;
+    }
+
+    public void addStudent(Student student){
+        if (students == null){
+            students = new HashSet<Student>();
+        }
+        students.add(student);
     }
 
     /**

@@ -8,6 +8,7 @@ import cucumber.api.java.en.When;
 import uni.fmi.grades.model.GradesScreenModel;
 import uni.fmi.login.model.LoginScreenModel;
 import uni.fmi.login.service.LoginService;
+import uni.fmi.models.Parent;
 
 public class GradesSteps {
 
@@ -21,6 +22,7 @@ public class GradesSteps {
 	@Given("^Parent open student grade screen$")
 	public void parentOpenStudentGradeScreen() throws Throwable {
 		gradeModel = new GradesScreenModel();
+		gradeModel.setParent(new Parent("Ivanna", "Nankova", "1245", "ivanna@gmail.com"));
 	}
 
 	@Given("^inputs student id: \"([^\"]*)\"$")

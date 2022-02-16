@@ -9,8 +9,10 @@ public class Grade {
     /**
      * Default constructor
      */
-    public Grade(Student student, Subject subject) {
+    public Grade(int gradeValue,Student student, Subject subject) {
     	this.student = student;
+        this.gradeValue = gradeValue;
+        this.subject = subject;
     }
 
     private int gradeValue;
@@ -32,7 +34,11 @@ public class Grade {
      */
     public void setGradeValue(int value) {
         // TODO implement here
-        gradeValue = value;
+        if (value >= 1 && value <= 6){
+            gradeValue = value;
+        }else {
+            gradeValue = 0;
+        }
     }
 
     /**
