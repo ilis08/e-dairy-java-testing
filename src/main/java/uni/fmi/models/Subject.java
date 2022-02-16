@@ -9,7 +9,8 @@ public class Subject {
     /**
      * Default constructor
      */
-    public Subject() {
+    public Subject(String name) {
+    	this.name = name;
     }
   
     private String name;

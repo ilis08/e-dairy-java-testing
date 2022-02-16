@@ -26,19 +26,19 @@ public class LoginSteps {
 	@When("^Insert a valid user password$")
 	public void insertValidUserPassword() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	    loginModel.setPassword("123Pet");
+	    loginModel.setPassword("1234Pet");
 	}
 
 	@When("^Insert a invalid user password$")
 	public void insert_a_invalid_user_password() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		assertEquals("Wrong data!", loginModel.getMessage());
+		loginModel.setPassword("32F1");
 	}
 	
 	@When("^Insert a invalid user email$")
 	public void insert_a_invalid_user_email() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		assertEquals("Wrong data!", loginModel.getMessage());
+		loginModel.setEmail("allo@mail.ru");
 	}
 	
 	@When("^press login button$")
@@ -59,6 +59,6 @@ public class LoginSteps {
 
 	@Then("^check at the wrong data message$")
 	public void checkAtTheWrongDataMessage() throws Throwable {
-		assertEquals("Wrong data", loginModel.getMessage());
+		assertEquals("Wrong data!", loginModel.getMessage());
 	}	
 }

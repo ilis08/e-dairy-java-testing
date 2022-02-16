@@ -9,11 +9,12 @@ public class Grade {
     /**
      * Default constructor
      */
-    public Grade(Student student) {
+    public Grade(Student student, Subject subject) {
     	this.student = student;
     }
 
     private int gradeValue;
+    private Subject subject;
     private Student student;
     private Exam exam;
 
@@ -67,5 +68,23 @@ public class Grade {
         // TODO implement here
         this.exam = exam;
     }
+    
+    /**
+     * @return
+     */
+    public Subject getSubject() {
+        // TODO implement here
+        return subject;
+    }
+
+    /**
+     * @param student 
+     * @return
+     */
+    public void setSubject(Subject subject) {
+        // TODO implement here
+        this.subject = subject;
+    }
+
 
 }
